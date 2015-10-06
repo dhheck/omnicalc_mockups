@@ -23,7 +23,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -34,63 +34,64 @@
         </button>
         <a class="navbar-brand" href="#"><i class="fa fa-calculator"></i> Omnicalc</a>
       </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav hidden-md hidden-lg">
+          <li><a href="../word_count/new_start.html"><i class="fa fa-book"></i> Word Count</a></li>
+          <li><a href="../loan_payment/new_start.html"><i class="fa fa-money"></i> Loan Payment</a></li>
+          <li><a href="../time_between/new_start.html"><i class="fa fa-clock-o"></i> Time Between</a></li>
+          <li><a href="../descriptive_statistics/new_start.html"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a></li>
 
-      <div class="list-group">
-          <a href="#" class="list-group-item">
-            <i class="fa fa-book"></i> Word Count</a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-money"></i> Loan Payment</a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-clock-o"></i> Time Between</a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-bar-chart"></i> Descriptive Statistics</a>
-      </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
 
-<div class="col-md-9">
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">New Word Count Calculation</h3>
-  </div>
-
-  <div class="panel-body">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label for="text" class="col-sm-2 control-label">Text</label>
-        <div class="col-sm-10">
-          <textarea class="form-control" rows="3" placeholder="Enter your text"></textarea>
+          <div class="list-group hidden-xs hidden-sm">
+            <a href="../word_count/new_start.html" class="list-group-item">
+              <i class="fa fa-book"></i> Word Count</a>
+            <a href="../loan_payment/new_start.html" class="list-group-item">
+              <i class="fa fa-money"></i> Loan Payment</a>
+            <a href="../time_between/new_start.html" class="list-group-item">
+              <i class="fa fa-clock-o"></i> Time Between</a>
+            <a href="../descriptive_statistics/new_start.html" class="list-group-item">
+              <i class="fa fa-bar-chart"></i> Descriptive Statistics</a>
+          </div>
         </div>
-      </div>
-
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">Special Word (optional)</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="Enter a word to count the occurrences of">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <button type="button" class="btn btn-primary btn-block">Submit</button>
-        </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
 
 
-  </div>
-</div>
+                <div class="col-md-9">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">New Descriptive Statistics Calculation</h3>
+                    </div>
 
+                    <div class="panel-body">
+                      <form action="results_start.html" class="form-horizontal">
+
+                        <div class="form-group">
+                          <label for="number" class="col-sm-2 control-label">Numbers</label>
+                          <div class="col-sm-10">
+                            <textarea class="form-control" rows="3" placeholder="Enter your numbers (separated by spaces)"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <a class="btn btn-primary btn-block" href="results_start.html" role="button">Submit</a>
+                          </div>
+                        </div>
+
+                         </form>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
 
 </body>
 </html>
